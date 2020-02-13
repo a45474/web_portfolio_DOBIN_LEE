@@ -242,7 +242,7 @@ html.not-scroll-top-0 .top-bar {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: #fcfbd5;
     width: 100%;
     min-width: 1000px;
     box-sizing: border-box;
@@ -266,13 +266,25 @@ html.not-scroll-top-0 .top-bar {
 .top-bar > .menu-1 > li:not(:nth-of-type(1)) > ul {
     background-color: white;
     position: absolute;
-    top: 100%;
+    top: 120%;
     left: 50%;
     transform: translatex(-50%);
-    border: 1px solid #555555;
+/*    border: 1px solid #777777;*/
     padding: 5.5px 0;
     width: 110px;
     display: none;
+}
+
+.top-bar > .menu-1 > li:not(:nth-of-type(1)) > ul::before {
+    content:"";
+    display: block;
+    position: absolute;
+    top:-15px;
+    left:50%;
+    background-color: #ba0e2f;
+    width:8px;
+    height:8px;
+    transform: rotate(45deg) translateX(-50%);
 }
 
 .top-bar > .menu-1 > li:not(:nth-of-type(1)):hover > ul {
@@ -558,7 +570,7 @@ html.not-scroll-top-0 .menu-3 {
 /* 인스타그램 배너 시작 */
 .instar-bn {
     margin-top: 50px;
-    background-color: #f0f0f0;
+    background-color: #fcfbd5;
     height: 490px;
     position: relative;
     margin-bottom: 50px;
@@ -640,36 +652,73 @@ html.not-scroll-top-0 .menu-3 {
 
 .quick-bn-bar > .title-img-box {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.quick-bn-bar > nav > ul > li.cell {
+    position: relative;
+    width:200px;
+    height:280px;
 }
 
 .quick-bn-bar > nav > ul > li.cell > .img-box {
     width: 200px;
     height: 200px;
     overflow: hidden;
+    transition:opacity 1s;
+    position: absolute;
+    top:0;
+    left:0;
 }
 
-.quick-bn-bar > nav > ul > li.cell > .img-box > img {
+.quick-bn-bar > nav > ul > li.cell > .img-box:nth-of-type(1) > img {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.quick-bn-bar > nav > ul > li.cell > .img-box:hover > img {
+.quick-bn-bar > nav > ul > li.cell > .img-box:nth-of-type(2) > img {
     left: 0;
     bottom: 0;
     top: auto;
+    position: absolute;
+    opacity: .9;
 }
+
+.quick-bn-bar > nav > ul > li.cell > .img-box:nth-of-type(2) {
+    opacity: 0;
+    
+}
+
+.quick-bn-bar > nav > ul > li.cell:hover > .img-box:nth-of-type(1) {
+    opacity 0;
+}
+
+.quick-bn-bar > nav > ul > li.cell:hover > .img-box:nth-of-type(2) {
+    opacity: 1;
+    display: block;
+}
+
 
 .quick-bn-bar > nav > ul {
     display: table;
     margin: 0 auto;
     min-width: 1045px;
+    box-sizing:border-box;
 }
 
 .quick-bn-bar > nav > ul > .cell {
     margin-right: 80px;
     cursor: pointer;
+    box-sizing:border-box;
+}
+
+.quick-bn-bar > nav > ul > li > .text-box {
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    width:100%;
 }
 
 .quick-bn-bar > nav > ul > .cell:hover > .text-box > div {
@@ -713,7 +762,7 @@ html.not-scroll-top-0 .menu-3 {
 
 /* 푸터목록1 */
 .footer {
-    background-color: #f0f0f0;
+    background-color: #fcfbd5;
     color: #333333;
     height: 455.94px;
     margin-top: 170px;
@@ -872,7 +921,7 @@ html.not-scroll-top-0 .menu-3 {
 .low-fixed-menu > div:nth-of-type(3) {
     width: 100%;
     height: 68px;
-    background-color: #fff8eb;
+    background-color: #dafcd5;
     margin-top: 20px;
 }
 
