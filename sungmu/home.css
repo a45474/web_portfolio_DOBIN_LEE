@@ -1,0 +1,98 @@
+.main-slider-box > .top-line {
+    width:100%;
+    height:15px;
+    background-color:#ee3224;
+    top:15px;
+    opacity: .8;
+}
+
+.main-slider-box > .bottom-line {
+    width:100%;
+    height:15px;
+    background-color:#273575;
+    bottom:15px;
+    opacity: .8;
+}
+
+.main-slider-box > .main-slider > .slides {
+    height:100vh;
+}
+
+
+.main-slider-box > .main-slider > .slides > .slide {
+    height:100%;
+    width:100%;
+}
+
+.main-slider-box > .main-slider > .slides > .slide:nth-of-type(1) {
+    background-image:url(./index.img/main-slider-slide-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-1 > .inner > .contents > .text {
+    font-size:17px;
+    line-height: 35px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.page-2 > .inner > .contents > .text {
+    width:45%;
+    padding-top:20px;
+}
+
+.page-2 > .inner > .contents > .text > .sub-title {
+    font-size:20px;
+    font-weight: 600;
+    margin-left:110px;
+}
+
+.page-2 > .inner > .contents > .img-box {
+    position: absolute;
+    top:-10px;
+    left:0;
+}
+
+.page-3 > .inner > .contents {
+    height:550px;
+    border:5px solid #eee;
+    box-sizing: border-box;
+}
+
+.page-3 > .inner > .contents > .tab-box {
+    position: absolute;
+    top:0;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.page-3 > .inner > .contents > .tab-box > div {
+    width:130px;
+    font-size:17px;
+    font-weight:600;
+    letter-spacing: -1px;
+    padding:10px 5px;
+    color:white;
+    background-color:#000;
+    border-bottom:2px solid #eee;
+    cursor:pointer;
+}
+
+.page-3 > .inner > .contents > .img-box {
+    width:65%;
+    height:100%;
+    background-color:gold;
+}
+
+
+html[data-current-index="0"] .pagination-box, html[data-current-index="7"] .pagination-box {
+    opacity:0;
+}
+
+
+.scroll-top .pagination-box, .scroll-bottom .pagination-box {
+    opacity:0;
+}
+
