@@ -33,6 +33,7 @@ $(function () {
             var ref = page[i].attr("data-section-name");
             $(".pagination .active").removeClass("active");
             $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+
         },
         afterRender: function () {
             $(".pagination-box a").on("click", $.scrollify.move);
