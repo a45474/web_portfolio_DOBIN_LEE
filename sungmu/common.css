@@ -6,6 +6,7 @@ li {
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 a {
@@ -257,17 +258,17 @@ a {
     content: "";
     display: block;
     position: absolute;
-    width:40px;
-    height:5px;
+    width:30px;
+    height:4px;
     background-color: #363636;
     bottom:0;
     left:50%;
-    transform: translateX(-50%) translateY(40px);
+    transform: translateX(-50%) translateY(25px);
 }
 
 .page > .inner > .title > span {
     display: block;
-    font-size:30px;
+    font-size:25px;
     font-weight: 700;
     letter-spacing: -1px;
 }
@@ -564,4 +565,12 @@ a {
 
 .popup-all-menu > .close-btn > div:nth-of-type(2) {
     transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+
+.page.gradient {
+    background-size:auto 120px;
+    background:url(./index.img/wave-pattern-01.png), linear-gradient(#fff, #fff, #000);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }

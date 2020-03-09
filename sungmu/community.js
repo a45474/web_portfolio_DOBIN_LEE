@@ -1,11 +1,4 @@
-$('.page > .inner > .contents > .tab-box > .tab').click(function () {
-
-
-    var $textBox = $(this).next();
-    var $tab = $(this).siblings('.tab');
-    
+$('.page > .inner > .contents > ul > li').click(function () {
     $(this).toggleClass('active');
-    $textBox.toggleClass('active');
-    $tab.toggleClass('hidden');
-    
+    $(this).siblings().toggleClass('hidden');
 });
