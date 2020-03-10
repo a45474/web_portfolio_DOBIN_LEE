@@ -73,4 +73,4 @@ function nextBtnClick () {
     $('.slider-box > .slider > .side-btns > div:nth-of-type(2)').click();
 }
 
-setInterval(nextBtnClick, 3000);
+setInterval(nextBtnClick, 5000);

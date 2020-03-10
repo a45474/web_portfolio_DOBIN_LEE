@@ -594,6 +594,12 @@ a {
     background-position: bottom;
 }
 
+@media (max-width:1200px) {
+    .page > .dore {
+        display:none;
+    }
+}
+
 /*문짝 드디어 시작*/
 .page > .dore {
     width:50%;
