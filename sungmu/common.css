@@ -653,3 +653,7 @@ a {
 .page> .right-dore {
     transform: translateY(-50%) translateX(80%);
 }
+
+.main-slider-box > .dore {
+    display: none;
+}
